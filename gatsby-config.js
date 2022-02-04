@@ -66,5 +66,19 @@ module.exports = {
         type_prefix: "Contentstack", // (default),
       },
     },
+    {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: [
+          "CONTENTSTACK_API_KEY",
+          "CONTENTSTACK_DELIVERY_TOKEN",
+          "CONTENTSTACK_ENVIRONMENT",
+          "CONTENTSTACK_MANAGEMENT_TOKEN",
+          "CONTENTSTACK_API_HOST",
+          "CONTENTSTACK_APP_HOST",
+          "CONTENTSTACK_LIVE_PREVIEW",
+        ],
+      },
+    },
   ],
 }
